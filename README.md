@@ -1,7 +1,7 @@
 # Kursinis-darbas-
 
-1. Vektorizavimas.py programa skirta vektorzituoti stuleplius su tekstinėmis įvestimis. Vektorizuojami šie stulepliai: name_t, breadcrumbs_t, description_t, definition.
-2. Industrycode.py programa skirta duomenų suskirtstymui į 14 pramonės grupių (Gaunama 14 atskirų failų).
+1. Vektorizavimas.py programa skirta vektorzituoti stulpelius su tekstinėmis įvestimis. Vektorizuojami šie stulepliai: name_t, breadcrumbs_t, description_t, definition.
+2. Industrycode.py programa skirta duomenų suskirstymui į 14 pramonės grupių (Gaunama 14 atskirų failų).
 
    Darbe buvo bandomi 3 algoritmai, todėl čia numeriu 3 aprašyti metodai bei funkcijos, skirtos "Primam iškirčių identifikavimo būdui". Numeriu 4 aprašyti metodai bei funkcijos, skirtos "Antram išskirčių identifikavimo būdui". Numeriu 5 aprašyti metodai bei funkcijos, skirtos "Trečiam išskirčių identifikavimo būdui".
    3, 4, 5 numeriais pažymėtos išskirčių identifikavimo funkcijos veikia nepriklausomai viena nuo kitos. T.y. norint įvyktdyti 4 numeriu pažymėtą kodą "Antro išskirčių identifikavimo metodas", užtenka prasileisti šiuos failus: 1. Vektorizavimas.py ir 2.Industrycode.py.
