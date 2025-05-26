@@ -3,7 +3,7 @@
 1. Vektorizavimas.py programa skirta vektorzituoti stuleplius su tekstinėmis įvestimis. Vektorizuojami šie stulepliai: name_t, breadcrumbs_t, description_t, definition.
 2. Industrycode.py programa skirta duomenų suskirtstymui į 14 pramonės grupių (Gaunama 14 atskirų failų).
 
-5. Šiame metode identifikuojami produktai, kurie galimai netinkamai priskirti savo kategorijoms, remiantis jų pavadinimo (name_t_vec) ir kelio nuorodos (breadcrumbs_t_vec) vektorių kosinuso panašumu iki kategorijos centroido.Produktai laikomi išskirtimis, jei jų kombinuotas panašumas (name + breadcrumbs) yra reikšmingai žemas – pagal z-score žemiau -3.
+ 5. Šiame metode identifikuojami produktai, kurie galimai netinkamai priskirti savo kategorijoms, remiantis jų pavadinimo (name_t_vec) ir kelio nuorodos (breadcrumbs_t_vec) vektorių kosinuso panašumu iki kategorijos centroido.Produktai laikomi išskirtimis, jei jų kombinuotas panašumas (name + breadcrumbs) yra reikšmingai žemas – pagal z-score žemiau -3.
 
    5.1. z-Score.py programoje
                               Duomenys sugrupuojami pagal kategorijas (label).
