@@ -5,9 +5,9 @@
 
 Trečias išskirčių identifikavimo būdas
 
-Šiame metode identifikuojami produktai, kurie galimai netinkamai priskirti savo kategorijoms, remiantis jų pavadinimo (name_t_vec) ir kelio nuorodos (breadcrumbs_t_vec) vektorių kosinuso panašumu iki kategorijos centroido.Produktai laikomi išskirtimis, jei jų kombinuotas panašumas (name + breadcrumbs) yra reikšmingai žemas – pagal z-score žemiau -3.
+Šiame metode identifikuojami produktai, kurie galimai netinkamai priskirti savo kategorijoms, remiantis jų pavadinimo (name_t_vec) ir kelio nuorodos (breadcrumbs_t_vec) vektorių kosinuso panašumu iki kategorijos centroido. Produktai laikomi išskirtimis, jei jų kombinuotas panašumas (name + breadcrumbs) yra reikšmingai žemas – pagal z-score žemiau -3.
 
-5.1. z-Score.py programoje
+5.1. z_Score.py programoje
 Duomenys sugrupuojami pagal kategorijas (label).
 Kiekvienai kategorijai apskaičiuojamas centroidas:
 name_centroid – medianinis vektorius iš name_t_vec.
@@ -17,7 +17,7 @@ Apskaičiuojamas kombinuotas panašumas
 Apskaičiuojamas z-score, ir produktai, kurių z < -3.0, laikomi išskirtimis.
 
 5.2. TextCleaning.py programoje identifikuojamos blogos teksto įvestis naudojant 6 funkcijas:
-def flag_noisy_symbols - pritaikyta patikrinti ar produktų pavaidinimai neturi įvairių netikslingų simbolių, kurie arba nesuteikia prasmės. Ši funkcija ieško šių simbolių @, #, ^, ~
+def flag_noisy_symbols - pritaikyta patikrinti ar produktų pavaidinimai neturi įvairių netikslingų simbolių, kurie nesuteikia prasmės. Ši funkcija ieško šių simbolių @, #, ^, ~
 def flag_only_digits - tikrina, ar pavadinimas nėra sudarytas vien iš skaičių.
 def flag_non_latin - tikrina, ar produkto pavadinimas nėra tik vienas žodis.
 def flag_name_is_single_word - tikrina ar produkto pavadinimas yra sudarytas tik iš lotyniškų raidžių.
