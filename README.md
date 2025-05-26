@@ -50,7 +50,7 @@ Apskaičiuojamas kombinuotas panašumas
 Apskaičiuojamas z-score, ir produktai, kurių z < -3.0, laikomi išskirtimis.
 
 5.2. TextCleaning.py programoje identifikuojamos blogos teksto įvestis naudojant 6 funkcijas:
-def flag_noisy_symbols - pritaikyta patikrinti ar produktų pavaidinimai neturi įvairių netikslingų simbolių, kurie arba nesuteikia prasmės. Ši funkcija ieško šių simbolių @, #, ^, ~
+def flag_noisy_symbols - pritaikyta patikrinti ar produktų pavaidinimai neturi įvairių netikslingų simbolių, kurie nesuteikia prasmės. Ši funkcija ieško šių simbolių @, #, ^, ~
 def flag_only_digits - tikrina, ar pavadinimas nėra sudarytas vien iš skaičių.
 def flag_non_latin - tikrina, ar produkto pavadinimas nėra tik vienas žodis.
 def flag_name_is_single_word - tikrina ar produkto pavadinimas yra sudarytas tik iš lotyniškų raidžių.
