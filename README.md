@@ -1,7 +1,7 @@
 # Kursinis-darbas-
 
-1. Vektorizavimas.py programa skirta vektorzituoti stuleplius su tekstinėmis įvestimis. Vektorizuojami šie stulepliai: name_t, breadcrumbs_t, description_t, definition.
-2. Industrycode.py programa skirta duomenų suskirtstymui į 14 pramonės grupių (Gaunama 14 atskirų failų).
+1. Vektorizavimas.py programa skirta vektorzituoti stulpelius su tekstinėmis įvestimis. Vektorizuojami šie stulepliai: name_t, breadcrumbs_t, description_t, definition.
+2. Industrycode.py programa skirta duomenų suskirstymui į 14 pramonės grupių (Gaunama 14 atskirų failų).
 
    Darbe buvo bandomi 3 algoritmai, todėl čia numeriu 3 aprašyti metodai bei funkcijos, skirtos "Primam iškirčių identifikavimo būdui". Numeriu 4 aprašyti metodai bei funkcijos, skirtos "Antram išskirčių identifikavimo būdui". Numeriu 5 aprašyti metodai bei funkcijos, skirtos "Trečiam išskirčių identifikavimo būdui".
    3, 4, 5 numeriais pažymėtos išskirčių identifikavimo funkcijos veikia nepriklausomai viena nuo kitos. T.y. norint įvyktdyti 4 numeriu pažymėtą kodą "Antro išskirčių identifikavimo metodas", užtenka prasileisti šiuos failus: 1. Vektorizavimas.py ir 2.Industrycode.py.
@@ -36,7 +36,8 @@
 
    Norint gauti darbe nagrinėjamus produktus tarp slenkstinės reikšmės 0.5 – 0.5, reikia įvykdyti 2. failą pakeitus slenkstinę reikšmę į 0.55 ir išfiltruoti iš gautų produktų tuos produktus, kurie buvo fiksuoti su slenkstine reikšme 0.5. 
 
-
+   Trečias išskirčių identifikavimo metodas
+   
 5. Šiame metode identifikuojami produktai, kurie galimai netinkamai priskirti savo kategorijoms, remiantis jų pavadinimo (name_t_vec) ir kelio nuorodos (breadcrumbs_t_vec) vektorių kosinuso panašumu iki kategorijos centroido.Produktai laikomi išskirtimis, jei jų kombinuotas panašumas (name + breadcrumbs) yra reikšmingai žemas – pagal z-score žemiau -3.
 
    5.1. z-Score.py programoje
@@ -57,7 +58,7 @@
                               def flag_single_breadcrumb_word - tikrina, ar kelio nuoroda nėra sudaryta tik iš vieno žodžio, pašalinus perteklinius žodžius.
 
    5.3. Describtion_vs_centroid.py  programa skirta patikrinti ar įtartini produktai yra galimai neteisingai priskirti kategorijoms, naudojant kosinuso panašumą tarp produkto aprašymo vektoriaus (description_t_vec) ir atitinkamos kategorijos centroido, apskaičiuoto iš visų tos kategorijos produktų aprašymų.
-                              Kiekvienam produktui iš df_suspicious paskaičiuojams kosinuso panašumas tarp jo description_t_vec ir savo kategorijos centroido.
+                              Kiekvienam produktui iš df_suspicious paskaičiuojamas kosinuso panašumas tarp jo description_t_vec ir savo kategorijos centroido.
                               Produktas laikomas blogai priskirtu jei desc_vs_centroid_cosine < 0.5
                               
    Norint gauti darbe nagrinėjamą -3 <= z <-2.5 z įverčių aibe, reikia įvykdyti 5.1 failą pakeitus [ outlier_mask = z_scores < -Z_THRESHOLD ] į [outlier_mask = (z_scores >= -3.0) & (z_scores <= -2.5)].
